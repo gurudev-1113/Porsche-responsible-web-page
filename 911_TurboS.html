@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porsche Official Style</title>
+<link rel="icon" type="image/png" href="https://w0.peakpx.com/wallpaper/230/282/HD-wallpaper-porsche-911-audi-bmw-car-germany-mercedes-benz-sports-car.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+ *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Montserrat',sans-serif;
+}
+
+body{
+  background:#000;
+  color:#dbd6d6;
+  scroll-behavior:smooth;
+}
+
+.menu{
+  position:fixed;
+  top:20px;
+  left:30px;
+  font-size:18px;
+  font-weight:bold;
+  z-index:20;
+}
+
+.hero{
+  position:relative;
+  height:100vh;
+  background:linear-gradient(to bottom, rgba(0,0,0,0) 30%, #000 95%),
+  url("https://a.storyblok.com/f/322327/5760x2850/bfd3b7659e/cz26w10ox0002-911-turbo-s-rear-desktop.jpg/m/1920x1080/smart/filters:format(avif)");
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+}
+
+.hero-content{
+  position:absolute;
+  bottom:100px;
+  left:50%;
+  transform:translateX(-50%);
+  text-align:center;
+  width:80%;
+}
+
+.hero-content h1{
+  font-size:60px;
+  font-weight:700;
+}
+
+.hero-content p{
+  font-size:16px;
+  opacity:.85;
+  max-width:800px;
+  margin:auto;
+}
+
+.hero-buttons{
+  margin-top:20px;
+}
+
+.hero-buttons button{
+  padding:12px 30px;
+  margin:10px;
+  border:1px solid white;
+  background:transparent;
+  color:white;
+  font-size:15px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.hero-buttons button:hover{
+  background:white;
+  color:black;
+}
+
+.watermark{
+  position:absolute;
+  bottom:20px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:140px;
+  font-weight:700;
+  color:rgba(255,255,255,.03);
+  letter-spacing:15px;
+  pointer-events:none;
+}
+
+
+.turbo-section{
+  background:#000;
+  padding:120px 0;
+  text-align:center;
+  position:relative;
+}
+
+
+.turbo-car{
+  width:100%;
+  max-width:900px;
+  display:block;
+  margin:auto;
+  filter:drop-shadow(0 20px 50px rgba(0,0,0,.9));
+}
+
+.turbo-watermark{
+  position:absolute;
+  top:80px;
+  left:50%;
+  transform:translateX(-50%);
+  font-size:180px;
+  font-weight:700;
+  color:rgba(255,255,255,.03);
+  letter-spacing:12px;
+  pointer-events:none;
+}
+
+.turbo-info h1{
+  font-size:52px;
+  margin:12px 0;
+}
+
+.badge{
+  background:white;
+  color:black;
+  padding:4px 10px;
+  font-size:12px;
+  border-radius:4px;
+  margin-right:6px;
+}
+
+.price{
+  font-size:18px;
+  margin:20px 0;
+}
+
+.btn-group{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  background:transparent;
+  border:1px solid white;
+  padding:14px 28px;
+  color:white;
+  font-size:14px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn.white{
+  background:white;
+  color:black;
+}
+
+.btn:hover{
+  background:white;
+  color:black;
+  transform:translateY(-2px);
+}
+
+
+.specs-section{
+  background:#000;
+  padding:120px 0;
+}
+
+.specs-container{
+  width:90%;
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:60px;
+}
+
+.specs-left{ flex:1; }
+
+.spec-item{
+  margin-bottom:35px;
+}
+
+.spec-item h1{
+  font-size:64px;
+  font-weight:600;
+  color:white;
+}
+
+.spec-item span{
+  font-size:22px;
+  opacity:.6;
+}
+
+.spec-item p{
+  font-size:14px;
+  opacity:.6;
+}
+
+.spec-btn{
+  margin-top:20px;
+  padding:12px 30px;
+  border:1px solid white;
+  background:transparent;
+  color:white;
+  font-size:14px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.spec-btn:hover{
+  background:white;
+  color:black;
+}
+
+.specs-right{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:40px;
+}
+
+.specs-right img{
+  width:100%;
+  max-width:420px;
+  filter:drop-shadow(0 30px 60px rgba(0,0,0,0.9));
+  transition:.4s;
+  border-radius:20px;
+}
+
+.specs-right img:hover{
+  transform:scale(1.05);
+}
+
+.line{
+  width:100%;
+  height:2px;
+  background:linear-gradient(to right, transparent, white, transparent);
+  border:none;
+  margin:30px 0;
+}
+
+.v-line{
+  width:2px;
+  height:400px;
+  background:white;
+}
+
+
+.turbo-s h1{
+  font-family:'Pacifico',cursive;
+  font-size:100px;
+  color:white;
+  transform:skewX(-10deg);
+  letter-spacing:3px;
+}
+
+.turbo-s img{
+  max-width:800px;
+  width:100%;
+  display:block;
+  margin:60px auto;
+  border:2px solid rgba(255,255,255,.2);
+  border-radius:20px;
+  filter:drop-shadow(0 20px 50px rgba(0,0,0,0.9));
+  transition:.5s;
+}
+
+.turbo-s img:hover{
+  transform:scale(1.08);
+}
+
+
+.quentially-turbo{
+  display:flex;
+  height:75vh;
+  background:black;
+  color:white;
+}
+
+.qt-image{ flex:1; }
+
+.qt-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:20px;
+  border:2px solid rgb(238, 238, 238);
+  padding: 20px;
+}
+
+.qt-text{
+  flex:1;
+  display:flex;
+  align-items:center;
+  padding:80px;
+}
+
+.qt-text p{
+  font-size:22px;
+  opacity:0.85;
+  max-width:500px;
+}
+
+
+.inner-section{
+  padding:80px 0;
+  text-align:center;
+}
+
+.inner-section img{
+  width:80%;
+  max-width:900px;
+  border-radius:20px;
+  border:2px solid rgba(255,255,255,.2);
+  filter:drop-shadow(0 20px 50px rgba(0,0,0,.9));
+}
+
+
+.t-hybrid{
+  text-align:center;
+  padding:80px 0;
+}
+
+.t-hybrid h3{
+  font-size:30px;
+  text-decoration:underline;
+  text-decoration-color:blueviolet;
+  
+}
+
+.t-hybrid p{
+  font-size:18px;
+  max-width:800px;
+  margin:auto;
+  
+}
+
+.t-hybrid img{
+  width:80%;
+  max-width:900px;
+  border-radius:20px;
+  border:2px solid rgba(255,255,255,.2);
+  filter:drop-shadow(0 20px 50px rgba(0,0,0,.9));
+  opacity: 90%;
+}
+.turbo-card::before{
+  content:"";
+  width:80%;
+  height:2px;
+  background:linear-gradient(to right, transparent, white, transparent);
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+}
+.turbo-card{
+  background:rgb(0, 0, 0);
+  padding:100px 0;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  position:relative;
+}
+
+.turbo-card{
+  background:rgb(0, 0, 0);
+  padding:100px 0;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  opacity: 50%;
+  
+}
+.turbos-card{
+  margin:-300px
+}
+.turbo-card .card{
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:20px;
+  width:320px;
+  padding:20px;
+  text-align:center;
+  transition:0.4s;
+  backdrop-filter:blur(10px);
+}
+
+
+.turbo-card .card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:15px;
+  margin-bottom:15px;
+  opacity: 100%;
+  border:2px solid rgb(197, 189, 189);
+  
+}
+
+.turbo-card .card h4{
+  font-size:20px;
+  color:white;
+  margin-bottom:10px;
+}
+
+.turbo-card .card p{
+  font-size:14px;
+  opacity:1;
+}
+
+.turbo-card .card:hover{
+  transform:translateY(-15px) scale(1.05);
+  box-shadow:0 30px 80px rgba(185, 179, 179, 0.1);
+  border-color:rgb(221, 210, 210);
+}
+
+
+
+@media(max-width:900px){
+  .quentially-turbo{
+    flex-direction:column;
+  }
+
+  .qt-image,
+  .qt-text{
+    height:50vh;
+  }
+
+  .turbo-card .card{
+    position:relative;
+    overflow:visible;
+  }
+}
+
+.car-sound{
+  padding:100px 0;
+  text-align:center;
+  background:black;
+}
+
+.car-sound .sound{
+  width:90%;
+  max-width:900px;
+  margin:auto;
+}
+
+.car-sound h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.car-sound p{
+  font-size:16px;
+  opacity:0.7;
+  margin-bottom:30px;
+}
+
+.car-sound img{
+  width:100%;
+  max-width:900px;
+  border-radius:20px;
+  border:2px solid rgba(255,255,255,.2);
+  filter:drop-shadow(0 20px 50px rgba(0,0,0,.9));
+}
+
+.car-sound .btn{
+  padding:15px 40px;
+  font-size:20px;
+  background:black;
+  color:white;
+  border:2px solid white;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#carSoundBtn{
+  padding:15px 40px;
+  font-size:20px;
+  background:black;
+  color:white;
+  border:2px solid white;
+  border-radius:10px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+#carSoundBtn:hover{
+  background:white;
+  color:black;
+}
+.performance img{ 
+  max-width:800px;
+  width:100%;
+  display:flex;
+  padding: 10px;
+  margin:80px auto;
+  border:2px solid rgba(7, 7, 7, 0.2);
+  filter:drop-shadow(0 50px 100px rgba(0,0,0,0.9));
+}
+.turbonite-section{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:80px 8%;
+  gap:60px;
+}
+
+.turbonite-text{
+  flex:1;
+  color:white;
+}
+
+.turbonite-text h3{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.turbonite-text p{
+  font-size:16px;
+  opacity:0.8;
+  max-width:600px;
+}
+
+.turbonite{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:30px;
+  width:100%;
+}
+
+.turbonite .card{
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.2);
+  border-radius:20px;
+  padding:18px;
+  text-align:center;
+  transition:0.4s;
+  backdrop-filter:blur(12px);
+}
+
+.turbonite .card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+  border:2px solid rgba(255,255,255,0.15);
+}
+
+.turbonite .card h4{
+  margin-top:12px;
+  font-size:17px;
+  color:white;
+  font-weight:600;
+}
+
+.turbonite .card:hover{
+  transform:translateY(-12px) scale(1.04);
+  box-shadow:0 25px 60px rgba(255,255,255,0.12);
+  border-color:white;
+}
+.premium-overlap{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:120px 8%;
+  background:white;
+  color:black;
+  text-align:center;
+}
+
+.overlap-images{
+  position:relative;
+  width:420px;
+  height:420px;
+  margin-bottom:40px;
+}
+
+.overlap-images img{
+  width:260px;
+  height:260px;
+  object-fit:cover;
+  border-radius:18px;
+  box-shadow:0 30px 80px rgba(0,0,0,0.25);
+  position:absolute;
+  transition:0.4s;
+}
+
+.img1{
+  top:0;
+  left:0;
+  z-index:2;
+}
+
+.img2{
+  bottom:0;
+  right:0;
+}
+
+.overlap-images img:hover{
+  transform:scale(1.08);
+}
+
+.overlap-text h2{
+  font-size:34px;
+  font-weight:700;
+  margin-bottom:15px;
+}
+
+.overlap-text p{
+  font-size:16px;
+  max-width:700px;
+  margin:auto;
+  line-height:1.6;
+}
+.premium-overlap{
+  margin-top:200px;
+}
+
+@media(max-width:400px){
+    
+}
+.inspiration-section{
+  padding:120px 8%;
+  background:#333232;
+}
+
+
+.inspiration-grid{
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  gap:20px;
+  align-items:start;
+}
+
+
+.big-img img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 30px 80px rgba(0,0,0,0.25);
+}
+
+
+.side-images{
+  display:grid;
+  grid-template-rows: 1fr 2fr;
+  gap:30px;
+}
+
+.side-images img{
+  width:100%;
+  border-radius:18px;
+  box-shadow:0 30px 80px rgba(0,0,0,0.25);
+}
+.inspiration-text{
+  margin-top:40px;
+  max-width:600px;
+}
+
+.inspiration-text h3{
+  font-size:22px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.inspiration-text p{
+  font-size:14px;
+  color:#d8d1d1;
+  line-height:2;
+}
+
+
+@media(max-width:400px){
+  .inspiration-grid{
+    grid-template-columns:1fr;
+  }
+}
+.car-card{
+background:#000000;
+border-radius:20px;
+padding:20px;
+width:320px;
+font-family:Arial, sans-serif;
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+align-items:end
+}
+
+.car-card img{
+width:100%;
+border-radius:12px;
+margin-bottom:15px;
+}
+
+.car-card h2{
+font-size:20px;
+font-weight:700;
+margin-bottom:5px;
+}
+
+.car-card .price{
+font-size:14px;
+color:#f3f1f1;
+margin-bottom:10px;
+}
+
+.car-tags span{
+display:inline-block;
+background:#ce1515;
+border-radius:10px;
+font-size:12px;
+margin-right:8px;
+font-weight:700;
+}
+
+.car-info{
+margin-top:12px;
+font-size:14px;
+color:#e6ebea;
+line-height:1.5;
+}
+
+.car-info b{
+font-size:16px;
+}
+
+.car-buttons{
+margin-top:15px;
+display:flex;
+gap:10px;
+}
+
+.car-buttons button{
+padding:10px 18px;
+border-radius:8px;
+border:none;
+font-size:14px;
+cursor:pointer;
+font-weight:600;
+}
+
+.select-btn{
+background:black;
+color:white;
+}
+
+.compare-btn{
+background:white;
+border:1px solid black;
+}
+
+.car-card:hover{
+transform:translateY(-8px);
+box-shadow:0 25px 60px rgba(0,0,0,0.25);
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="menu">☰ Menu</div>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>One of a kind.</h1>
+    <p>Its presence is felt from afar. Its thrill is without limits.</p>
+    <div class="hero-buttons">
+      <button>Change Model</button>
+      <button>Configure</button>
+    </div>
+  </div>
+  <div class="watermark">Turbo S</div>
+</section>
+
+<section class="turbo-section">
+  <img class="turbo-car" src="https://images-porsche.imgix.net/-/media/E969499404154DB79BAD58EF5CC8CFAB_82BBE0A2462E47C4B1DB34EA0B23B853_CZ25W12IX0010-911-carrera-gts-side?w=2560&h=697&q=45&crop=faces%2Centropy%2Cedges&auto=format">
+  <div class="turbo-watermark">Turbo S</div>
+
+  <div class="turbo-info">
+    <h1>911 Turbo S</h1>
+    <span class="badge">New</span>
+    <span class="badge">Gasoline</span>
+    <p class="price">From ₹3,80,35,000.00</p>
+
+    <div class="btn-group">
+      <button class="btn white">Change model</button>
+      <button class="btn">Configure</button>
+      <button class="btn">Find new or used</button>
+    </div>
+  </div>
+</section>
+
+<section class="specs-section">
+  <div class="specs-container">
+
+    <div class="specs-left">
+      <div class="spec-item">
+        <h1>2.5<span>s</span></h1>
+        <p>Acceleration 0 – 100 km/h</p>
+      </div>
+
+      <div class="spec-item">
+        <h1>523 <span>kW</span> / 711 <span>PS</span></h1>
+        <p>Power combined</p>
+      </div>
+
+      <div class="spec-item">
+        <h1>322 <span>km/h</span></h1>
+        <p>Top speed</p>
+      </div>
+
+      <hr class="line">
+      <button class="spec-btn">View all technical details</button>
+    </div>
+
+    <div class="v-line"></div>
+
+    <div class="specs-right">
+      <img src="https://a.storyblok.com/f/322327/2580x1815/bfe7032254/cz26w10ix0011-911-turbo-s-rear.png/m/600x422/smart/filters:format(avif)">
+      <img src="https://a.storyblok.com/f/322327/2580x1848/003c22bff9/cz26w00ox0003-911-turbo-s-and-911-turbo-s-cabrio.jpg/m/600x450/smart/filters:format(avif)">
+    </div>
+
+  </div>
+</section>
+
+<section class="turbo-section">
+  <div class="turbo-s">
+    <h1>Turbo S</h1>
+    <img src="https://a.storyblok.com/f/322327/5232x2944/df612d1d34/cz26w10ox0001-911-turbo-s-side.jpg/m/900x506/smart/filters:format(avif)">
+  </div>
+</section>
+
+<section class="quentially-turbo">
+  <div class="qt-image">
+    <img src="https://a.storyblok.com/f/322327/2992x3972/957677584e/2992x3972_cz26w10od0001.jpg/m/1200x1600/smart/filters:format(avif)">
+  </div>
+
+  <div class="qt-text">
+    <p>
+      With a wider body, side air intakes and a distinctive rear spoiler,
+      the 911 Turbo S remains true to its unmistakable lines and unique character.
+    </p>
+  </div>
+</section>
+
+<section class="inner-section">
+  <h3>Inner strength. External elegance.</h3><br>
+  <img src="https://a.storyblok.com/f/322327/4608x2592/5bd6997126/cz26w10ox0002-911-turbo-s-rear.jpg/m/1039x584/smart/filters:format(avif)">
+</section>
+<section class="t-hybrid">
+  <h3>Moves you forward. Without any limits holding you back.</h3><br>
+  <p>The T-Hybrid technology was derived directly from motorsport and combines the emotional sound of a six-cylinder flat engine with the acceleration of a fully electric sports car.<br> The compact design also ensures an optimised power-to-weight ratio.</p><br><br>
+  <img src="https://static.vecteezy.com/system/resources/thumbnails/051/208/062/small/black-sports-car-parked-in-a-city-at-night-reflecting-blue-and-orange-lights-photo.jpg" alt="car1"><br>
+
+</section>
+<div class="turbos-card">
+<section class="turbo-card">
+
+  <div class="card">
+    <img src="https://www.carscoops.com/wp-content/uploads/2024/10/Porsche-911-Turbo-8-copy.webp">
+    <h4>The Twin eTurbo engine</h4>
+    <p>Faster, smoother and more dynamic performance.</p>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRXH1THGUvxkaCCyp29VA-1sGisPY_nZQXDw&s">
+    <h4>Goes like a bullet</h4>
+    <p>Feels like a rocket with extreme acceleration.</p>
+  </div>
+  </div>
+</section><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<section class="car-sound">
+  <div class="sound">
+    <h2>Clearly recognisable. Even with your eyes closed.</h2>
+    <p>Experience the sound of the six-cylinder flat engine and the sport exhaust system with Turbo-specific titanium tailpipes.</p>
+
+    <img src="https://a.storyblok.com/f/322327/4596x2016/9b3065d09c/cz26w10ox0004-911-turbo-s-rear-desktop.jpg/m/1407x703/smart/filters:format(avif)" alt="car sound">
+
+    <button id="carSoundBtn">Hold to Roar</button>
+  </div>
+</section>
+<section class="perform">
+  <center>
+    <h2><b></b>Gives performance its own colour.</h2>
+  </center>
+  <div class="performance">
+    <img src="https://hips.hearstapps.com/hmg-prod/images/2025-porsche-911-16-664e5441a918f.jpg?crop=0.886xw:0.590xh;0.0513xw,0.216xh&resize=1200:*" alt="car">
+
+  </div>
+</section>
+<section class="turbonite-section">
+
+  <div class="turbonite-text">
+    <h3>Elements in Turbonite.</h3>
+    <p>
+      Turbonite was developed exclusively for Porsche Turbo models and Pantone®<br>
+      included it in the internationally recognised colour trend forecast for Fashion Week in New York and London.<br>
+      Special highlights in this exclusive colour. The Porsche Crest.<br>
+    </p>
+  </div>
+
+  <div class="turbonite">
+
+  <div class="card">
+    <img src="https://a.storyblok.com/f/322327/2550x1950/48b10adbfc/cz26w10od0004-911-turbo-s-lettering.jpg">
+    <h4>Rear lettering in Turbonite</h4>
+  </div>
+
+  <div class="card">
+    <img src="https://a.storyblok.com/f/322327/1230x1950/542562957d/cz26w10od0005-911-turbo-s-wheel.jpg">
+    <h4>Wheels in Turbonite</h4>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_b0jx_TO0Kzr8gIFea2UM4y63TOHYiTFW-w&s">
+    <h4>Interior Turbonite Trim</h4>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYDI1922T19FIBG9ZjsOFwuFMJX8RMNAA_w&s">
+    <h4>Turbo Badge Close-up</h4>
+  </div>
+
+  <div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUhbJiS5pYOndoj0RSR92_cVQn05e7kkgVgg&s">
+    <h4>Side Mirror Turbonite</h4>
+  </div>
+
+  <div class="card">
+    <img src="https://www.carandbike.com/_next/image?url=https%3A%2F%2Fimages.carandbike.com%2Fcar-images%2Fgallery%2Fporsche%2F911%2Finterior%2Fporsche-911-driver-seater.jpg%3Fv%3D2019-04-11&w=1920&q=90">
+    <h4>Seats Comfort.</h4>
+  </div>
+
+</div>
+  </div>
+  </section>
+  <section class="premium-overlap">
+<div class="overlap-images">
+<img class="img1" src="https://a.storyblok.com/f/322327/2992x3972/957677584e/2992x3972_cz26w10od0001.jpg">
+<img class="img2" src="https://a.storyblok.com/f/322327/5232x2944/df612d1d34/cz26w10ox0001-911-turbo-s-side.jpg">
+</div>
+
+<div class="overlap-text">
+<h2>The highest standard, as standard.</h2>
+<p>The exceptional nature of the 911 Turbo S is also evident in its extensive standard interior.</p>
+</div>
+</section>
+
+<section class="inspiration-section">
+  <center>
+<h1>Inspiration from Porsche Exclusive Manufaktur.</h1></center>
+  <div class="inspiration-grid">
+
+  
+    <div class="big-img"><br><br><br><br><br><br><br><br>
+      <img src="https://a.storyblok.com/f/322327/5232x2944/df612d1d34/cz26w10ox0001-911-turbo-s-side.jpg">
+    </div>
+
+ 
+    <div class="side-images"><br>
+      <img src="https://a.storyblok.com/f/322327/2550x1950/48b10adbfc/cz26w10od0004-911-turbo-s-lettering.jpg">
+  
+      <img src="https://a.storyblok.com/f/322327/1230x1950/542562957d/cz26w10od0005-911-turbo-s-wheel.jpg">
+    </div>
+
+  </div>
+
+  <div class="inspiration-text">
+    <h3>A passion for detail.</h3>
+    <p>
+      Designed by the experts at Porsche Exclusive Manufaktur, a 911 Turbo S that shows just how stylish performance can be.  
+      A look that is just waiting to be completed by you.
+    </p>
+  </div>
+
+</section>
+<center>
+<div class="car-card">
+<img src="https://images-porsche.imgix.net/-/media/0683EEF17ADA4D6ABAA276C65235E96C_29BC6C3357784A859B8A0E4B36EE15F8_CZ25W14IX0010-911-carrera-4-gts-side?w=2560&h=697&q=85&crop=faces%2Centropy%2Cedges&auto=format">
+
+<h2>911 Carrera 4 GTS</h2>
+<div class="price">From ₹2,77,59,000 incl. VAT</div>
+
+<div class="car-tags">
+<span>Gasoline</span>
+<span>All-Wheel Drive</span>
+<span>Automatic</span>
+</div>
+
+<div class="car-info">
+<b>3.0 s</b><br>
+Acceleration 0–100 km/h<br><br>
+
+<b>398 kW / 541 PS</b><br>
+Power combined<br><br>
+
+<b>312 km/h</b><br>
+Top speed
+</div>
+
+<div class="car-buttons">
+
+<a href="911_Turbo50.html">
+    <button class="select-btn">Select model</button>
+</a>
+
+<button class="compare-btn">Compare</button>
+
+</div>
+
+
+</body>
+
+</body>
+</html>

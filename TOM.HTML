@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartoon End</title>
+
+<style>
+body{
+    background:black;
+    color:white;
+    overflow:hidden;
+}
+
+.image{
+    margin:100px;
+    animation: cartoonMove 5s ease forwards;
+}
+
+.endText{
+    font-size:80px;
+    font-family:Arial, sans-serif;
+    color:yellow;
+    text-align:center;
+    opacity:0;
+    animation: showEnd 1s forwards;
+    animation-delay:5s;
+}
+
+@keyframes cartoonMove{
+    0%{
+        transform: translateX(0) rotate(0deg);
+    }
+    100%{
+        transform: translateX(600px) rotate(360deg) scale(1.5);
+    }
+}
+
+@keyframes showEnd{
+    from{
+        opacity:0;
+        transform: scale(0);
+    }
+    to{
+        opacity:1;
+        transform: scale(1.5);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<img src="https://m.media-amazon.com/images/I/512fqKl2HpL._AC_UF894,1000_QL80_.jpg" height="150" class="image">
+
+<h1 class="endText">The End😜</h1>
+
+</body>
+</html>

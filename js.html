@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(106, 78, 133);
+    width: 700px;
+    margin: 50px auto;
+    border-radius: 50px;
+    padding: 50px;
+    text-align: center;
+}
+
+.btn{
+    background-color: brown;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.add{ background-color: bisque; }
+.less{ background-color: chartreuse; }
+</style>
+</head>
+
+<body>
+<div class="box" id="box">
+
+    <h1 id="disp">0</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere suscipit, id quisquam ad beatae autem labore, dolorum animi quod tempore ab nisi repudiandae odio, provident cum culpa excepturi veritatis dolores.</p>
+
+    <button id="add" class="btn add">Add</button>
+    <button id="less" class="btn less">Sub</button>
+</div>
+
+<script>
+let count=0;
+    
+const d = document.getElementById("disp");
+const box = document.getElementById("box");
+document.getElementById("add").addEventListener("click", function () {
+    count++;
+    d.innerText = count;
+    d.style.transform = "scale(2)";
+    if (count > 20) {
+        box.style.backgroundColor = "red";
+    }
+    if (count > 30) {
+        box.style.backgroundColor = "green";
+    }
+});
+
+document.getElementById("less").addEventListener("click", function () {
+    count--;
+    d.innerText = count;
+    d.style.transform = "scale(2)";
+}); 
+setTimeout(
+    function(){d.style.transform="scale(0.5)";},300
+)
+setTimeout(
+    function(){d.style.transform="scale(1)";},300
+)
+</script>
+
+</body>
+</html>
